@@ -1,0 +1,29 @@
+<div >
+    <span id="filter_tags_area">
+        <b style="font-size: 1.1em"> FILTERS : </b>
+        
+        <span class="dim_text btn tags" (click)="onfilterSelection('all')"> All Products </span>
+        <span class="dim_text btn tags text-capitalize" *ngFor="let tag of tags" (click)="onfilterSelection(tag)">
+            {{tag}}
+        </span>
+    </span>
+    
+    <span id="sorting_span" class="btn tags" (click)="sort_order=!sort_order" style="float: right;"> 
+        <span class="dim_text">
+            Sort By:  
+        </span>
+        <span *ngIf="sort_order" (click)="sort_by_price('asc')">
+            <b> Price Low to High </b>
+            <span class="glyphicon glyphicon-chevron-down"></span>
+        </span>
+        <span *ngIf="!sort_order" (click)="sort_by_price('desc')">
+            <b> Price High to Low </b>
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </span>
+    </span>
+
+    <span *ngIf="filter_applied" class="btn tags" (click)="onfilterSelection('clear')" style="float: right;">
+        Clear Filter
+    </span>
+
+</div>

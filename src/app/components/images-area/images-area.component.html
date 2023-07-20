@@ -1,0 +1,27 @@
+<main>
+    <section class="container-fluid">
+        <p style="font-size: 0.88em"> 
+            <span class="dim_text"> Home / Clothing / Men's Clothing / </span> <b> All Men's Clothing </b>
+        <p>
+        <p style="font-size: 1.5em">
+            <b> All Products </b> <span class="dim_text"> ({{ items.length }}) </span>
+        </p>
+        <app-filter-div 
+            [tags]="tags_arr" 
+            (filterSelected)="filterResults($event)" 
+            (onSort)="sortResults($event)" 
+        ></app-filter-div>
+    </section>
+    <br>
+    <section class="container-fluid">
+        <div class="row" style="margin-left: 10px;">
+            <div class="col-lg-2 col-md-4 col-sm-6 col-xs-12" *ngFor="let item of items" style="margin-right: 3%" >
+                <app-image-div 
+                    [item]="item"
+                    (onAddToCart)="addItemToCart($event)"
+                ></app-image-div>
+            </div>
+        </div>
+    </section>
+</main>
+

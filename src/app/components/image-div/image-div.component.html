@@ -1,0 +1,28 @@
+<figure class="item" >
+    <div class="img-responsive display_image_area" [ngStyle]="{ 'background-image': 'url('+item.image_src +')'}"
+        (mouseover)="showSizeOptions=true" (mouseleave)="showSizeOptions=false; showATCbtn=false">
+
+        <div class="display_options_area" *ngIf="showSizeOptions" style="margin-top: 85%;">
+            <p *ngIf="showATCbtn"> 
+                <button class="btn ATC_btn" (click)="addToCart(item)"> ADD TO CART </button> 
+            </p>
+            <h6>  Select Size :</h6>
+            <span *ngFor="let size of item.options" 
+                class="btn size_option_tags" 
+                (click)="sizeSelected(size)">
+                {{size.value}} 
+            </span>
+        </div>
+        
+    </div>
+</figure>
+<figcaption>
+    <h5> {{item.vendor}} </h5>	
+    <p class="dim_text"> {{item.name}}  </p>
+    <p>
+        <b> ${{item.price}}</b>
+        <span class="dim_text"> ${{item.compare_at_price}} </span>
+        <span style="color: #ffb5b5"> (15 % off) </span>
+    </p>
+</figcaption>
+            

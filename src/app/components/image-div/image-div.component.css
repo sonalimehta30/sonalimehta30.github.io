@@ -1,0 +1,42 @@
+.item{
+    height: 40vh;
+    width: 16vw;
+}
+
+.display_image_area{
+    cursor: pointer;
+    position: relative;
+    height: 40vh;
+    width: 16vw;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.display_options_area{
+    background-color:white;
+    opacity: 0.85;
+    min-height: 10vh;
+	width: inherit;
+    position: absolute;
+    z-index: 10;
+    bottom: 0;
+	padding: 10px;
+    box-shadow: 2px 2px #f2f2f2;
+}
+.size_option_tags{
+    border: 1px solid #afafaf;
+    border-radius: 25px;
+    padding: 3px;
+    font-size: 0.82em;
+    min-width: 1vw;
+    margin-right: 6px;
+}
+.size_option_tags:hover{
+    border: 1px solid black;
+}
+
+.ATC_btn{
+    width: 95%;
+    background-color: white; 
+    border: 2px solid black;
+    font-weight: bold;
+}
