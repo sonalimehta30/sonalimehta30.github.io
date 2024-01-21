@@ -1,4 +1,4 @@
-import { Component, OnInit, Output } from '@angular/core';
+import { Component, Input, OnInit, Output } from '@angular/core';
 import { ITEMS } from "../../mock-data";
 import { Item } from 'src/app/Item';
 
@@ -10,6 +10,7 @@ import { Item } from 'src/app/Item';
 export class ImagesAreaComponent implements OnInit {
   @Output() item: Item;
   @Output() tags: string[];
+  @Input() cartItems: any[]; 
 
   items = ITEMS; // Fetch this with an API call later
   tags_arr:string[] = [];
@@ -36,15 +37,21 @@ export class ImagesAreaComponent implements OnInit {
   }
   
   addItemToCart(cartItem:Item){
-    let temp = {
-      'name': cartItem.name,
-      'vendor' : cartItem.vendor,
-      'price'  : cartItem.price,
-      'size' :cartItem.selectedSize?.value,
-      'id' : cartItem.selectedSize?.id,
-      'qty' : 1
-    }
+    // let temp = {
+    //   'name': cartItem.name,
+    //   'vendor' : cartItem.vendor,
+    //   'price'  : cartItem.price,
+    //   'image_src' : cartItem.image_src,
+    //   'size' :cartItem.selectedSize?.value,
+    //   'id' : cartItem.selectedSize?.id,
+    //   'qty' : 1
+    // }
+    let temp = cartItem;
+    temp.qty = 1;
+    temp.sizeCode = cartItem.sizeCode;
     this.cart_items.push(temp)
+    // save this in session later
+    localStorage.setItem('cart_items', JSON.stringify(this.cart_items))
     console.log(this.cart_items)
   }
   

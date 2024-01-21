@@ -1,5 +1,5 @@
 export interface SizeOption{
-    "id": string;
+    "sizeCode": string;
     "name": string;
     "value": string;
 }
@@ -14,5 +14,7 @@ export interface Item{
     "compare_at_price": string;
     "options": SizeOption[];
     "discount"?: number;
-    "selectedSize"?: SizeOption;
+    "selectedSize"?: string;
+    "qty"?: Number;
+    "sizeCode"?: string;
 }

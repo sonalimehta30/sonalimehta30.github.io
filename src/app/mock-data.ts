@@ -11,23 +11,23 @@ export const ITEMS: Item[] = [
         "compare_at_price": "200",
         "options": [
             {
-                "id": "1010",
+                "sizeCode": "1010",
                 "name": "Size",
                 "value": "US 8"
             }, {
-                "id": "1011",
+                "sizeCode": "1011",
                 "name": "Size",
                 "value": "US 9"
             }, {
-                "id": "1012",
+                "sizeCode": "1012",
                 "name": "Size",
                 "value": "US 10"
             }, {
-                "id": "1013",
+                "sizeCode": "1013",
                 "name": "Size",
                 "value": "US 11"
             }, {
-                "id": "1014",
+                "sizeCode": "1014",
                 "name": "Size",
                 "value": "US 13"
             }
@@ -36,30 +36,30 @@ export const ITEMS: Item[] = [
     {
         "id": 2,
         "vendor": "Puma",
-        "name": "Solid Polo Collar Grey T-shirt",
+        "name": "SolsizeCode Polo Collar Grey T-shirt",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Denim_0.jpg?v=1603267107"],
         "price": "74",
         "compare_at_price": "200",
         "tag": "Denim",
         "options": [
             {
-                "id": "1020",
+                "sizeCode": "1020",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1021",
+                "sizeCode": "1021",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1022",
+                "sizeCode": "1022",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1023",
+                "sizeCode": "1023",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1024",
+                "sizeCode": "1024",
                 "name": "Size",
                 "value": "xl"
             }
@@ -75,23 +75,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1030",
+                "sizeCode": "1030",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1031",
+                "sizeCode": "1031",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1032",
+                "sizeCode": "1032",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1033",
+                "sizeCode": "1033",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1034",
+                "sizeCode": "1034",
                 "name": "Size",
                 "value": "xl"
             }
@@ -100,30 +100,30 @@ export const ITEMS: Item[] = [
     {
         "id": 4,
         "vendor": "Here & Now",
-        "name": "Men Blue Solid Biker jacket",
+        "name": "Men Blue SolsizeCode Biker jacket",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Jacket_1.jpg?v=1603267865"],
         "price": "40",
         "compare_at_price": "80",
         "tag": "jacket",
         "options": [
             {
-                "id": "1040",
+                "sizeCode": "1040",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1041",
+                "sizeCode": "1041",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1042",
+                "sizeCode": "1042",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1043",
+                "sizeCode": "1043",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1044",
+                "sizeCode": "1044",
                 "name": "Size",
                 "value": "xl"
             }
@@ -132,30 +132,30 @@ export const ITEMS: Item[] = [
     {
         "id": 5,
         "vendor": "Roadster",
-        "name": "Men Red Solid Padded jacket",
+        "name": "Men Red SolsizeCode Padded jacket",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Jacket_0.jpg?v=1603268267"],
         "price": "50",
         "compare_at_price": "100",
         "tag": "jacket",
         "options": [
             {
-                "id": "1050",
+                "sizeCode": "1050",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1051",
+                "sizeCode": "1051",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1052",
+                "sizeCode": "1052",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1053",
+                "sizeCode": "1053",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1054",
+                "sizeCode": "1054",
                 "name": "Size",
                 "value": "xl"
             }
@@ -171,23 +171,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1060",
+                "sizeCode": "1060",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "1051",
+                "sizeCode": "1051",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "1052",
+                "sizeCode": "1052",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "1053",
+                "sizeCode": "1053",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "1054",
+                "sizeCode": "1054",
                 "name": "Size",
                 "value": "46"
             }
@@ -203,23 +203,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1070",
+                "sizeCode": "1070",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "1071",
+                "sizeCode": "1071",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "1072",
+                "sizeCode": "1072",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "1073",
+                "sizeCode": "1073",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "1074",
+                "sizeCode": "1074",
                 "name": "Size",
                 "value": "46"
             }
@@ -235,23 +235,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1080",
+                "sizeCode": "1080",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "1081",
+                "sizeCode": "1081",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "1082",
+                "sizeCode": "1082",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "1083",
+                "sizeCode": "1083",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "1084",
+                "sizeCode": "1084",
                 "name": "Size",
                 "value": "46"
             }
@@ -267,23 +267,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "1090",
+                "sizeCode": "1090",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1091",
+                "sizeCode": "1091",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1092",
+                "sizeCode": "1092",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1093",
+                "sizeCode": "1093",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1094",
+                "sizeCode": "1094",
                 "name": "Size",
                 "value": "xl"
             }
@@ -299,23 +299,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "1011",
+                "sizeCode": "1011",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1012",
+                "sizeCode": "1012",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1013",
+                "sizeCode": "1013",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1014",
+                "sizeCode": "1014",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1015",
+                "sizeCode": "1015",
                 "name": "Size",
                 "value": "xl"
             }
@@ -331,23 +331,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "1200",
+                "sizeCode": "1200",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1201",
+                "sizeCode": "1201",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1202",
+                "sizeCode": "1202",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1203",
+                "sizeCode": "1203",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1204",
+                "sizeCode": "1204",
                 "name": "Size",
                 "value": "xl"
             }
@@ -363,23 +363,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1300",
+                "sizeCode": "1300",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1301",
+                "sizeCode": "1301",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1302",
+                "sizeCode": "1302",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1303",
+                "sizeCode": "1303",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1304",
+                "sizeCode": "1304",
                 "name": "Size",
                 "value": "xl"
             }
@@ -395,23 +395,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1400",
+                "sizeCode": "1400",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1401",
+                "sizeCode": "1401",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1402",
+                "sizeCode": "1402",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1403",
+                "sizeCode": "1403",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1404",
+                "sizeCode": "1404",
                 "name": "Size",
                 "value": "xl"
             }
@@ -427,23 +427,23 @@ export const ITEMS: Item[] = [
         "tag": "Denim",
         "options": [
             {
-                "id": "1600",
+                "sizeCode": "1600",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "1601",
+                "sizeCode": "1601",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "1602",
+                "sizeCode": "1602",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "1603",
+                "sizeCode": "1603",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "1604",
+                "sizeCode": "1604",
                 "name": "Size",
                 "value": "xl"
             }
@@ -452,30 +452,30 @@ export const ITEMS: Item[] = [
     {
         "id": 17,
         "vendor": "Highlander",
-        "name": "Men Blue Slim Fit Solid Casual Denim...",
+        "name": "Men Blue Slim Fit SolsizeCode Casual Denim...",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Denim_1.jpg?v=1603272203"],
         "price": "170",
         "compare_at_price": "215",
         "tag": "Denim",
         "options": [
             {
-                "id": "1700",
+                "sizeCode": "1700",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "1701",
+                "sizeCode": "1701",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "1702",
+                "sizeCode": "1702",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "1703",
+                "sizeCode": "1703",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "1704",
+                "sizeCode": "1704",
                 "name": "Size",
                 "value": "46"
             }
@@ -484,30 +484,30 @@ export const ITEMS: Item[] = [
     {
         "id": 18,
         "vendor": "Roadster",
-        "name": "Men Blue Regular Fit Solid Casual Den...",
+        "name": "Men Blue Regular Fit SolsizeCode Casual Den...",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Denim_4.jpg?v=1603272486"],
         "price": "180",
         "compare_at_price": "225",
         "tag": "Denim",
         "options": [
             {
-                "id": "1800",
+                "sizeCode": "1800",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "1801",
+                "sizeCode": "1801",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "1802",
+                "sizeCode": "1802",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "1803",
+                "sizeCode": "1803",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "1804",
+                "sizeCode": "1804",
                 "name": "Size",
                 "value": "46"
             }
@@ -523,23 +523,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "1900",
+                "sizeCode": "1900",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "1901",
+                "sizeCode": "1901",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "1902",
+                "sizeCode": "1902",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "1903",
+                "sizeCode": "1903",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "1904",
+                "sizeCode": "1904",
                 "name": "Size",
                 "value": "46"
             }
@@ -555,23 +555,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "2000",
+                "sizeCode": "2000",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "2001",
+                "sizeCode": "2001",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "2002",
+                "sizeCode": "2002",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "2003",
+                "sizeCode": "2003",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "2004",
+                "sizeCode": "2004",
                 "name": "Size",
                 "value": "46"
             }
@@ -587,23 +587,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "2100",
+                "sizeCode": "2100",
                 "name": "Size",
                 "value": "38"
             }, {
-                "id": "2101",
+                "sizeCode": "2101",
                 "name": "Size",
                 "value": "39"
             }, {
-                "id": "2102",
+                "sizeCode": "2102",
                 "name": "Size",
                 "value": "40"
             }, {
-                "id": "2103",
+                "sizeCode": "2103",
                 "name": "Size",
                 "value": "44"
             }, {
-                "id": "2104",
+                "sizeCode": "2104",
                 "name": "Size",
                 "value": "46"
             }
@@ -619,23 +619,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "2200",
+                "sizeCode": "2200",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2201",
+                "sizeCode": "2201",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2202",
+                "sizeCode": "2202",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2203",
+                "sizeCode": "2203",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2204",
+                "sizeCode": "2204",
                 "name": "Size",
                 "value": "xl"
             }
@@ -644,30 +644,30 @@ export const ITEMS: Item[] = [
     {
         "id": 23,
         "vendor": "Difference Of Opinion",
-        "name": "Men Sea Green Solid Round Neck T-Sh..",
+        "name": "Men Sea Green SolsizeCode Round Neck T-Sh..",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Teeshirt_9.jpg?v=1603274954"],
         "price": "230",
         "compare_at_price": "280",
         "tag": "T-shirt",
         "options": [
             {
-                "id": "2300",
+                "sizeCode": "2300",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2301",
+                "sizeCode": "2301",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2302",
+                "sizeCode": "2302",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2303",
+                "sizeCode": "2303",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2304",
+                "sizeCode": "2304",
                 "name": "Size",
                 "value": "xl"
             }
@@ -683,23 +683,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "2400",
+                "sizeCode": "2400",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2401",
+                "sizeCode": "2401",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2402",
+                "sizeCode": "2402",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2403",
+                "sizeCode": "2403",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2404",
+                "sizeCode": "2404",
                 "name": "Size",
                 "value": "xl"
             }
@@ -708,30 +708,30 @@ export const ITEMS: Item[] = [
     {
         "id": 25,
         "vendor": "HRX By Hrithik Roshan",
-        "name": "Men Navy Blue Solid Round Neck T-Sh...",
+        "name": "Men Navy Blue SolsizeCode Round Neck T-Sh...",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Teeshirt_8.jpg?v=1603275303"],
         "price": "250",
         "compare_at_price": "295",
         "tag": "shirt",
         "options": [
             {
-                "id": "2500",
+                "sizeCode": "2500",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2501",
+                "sizeCode": "2501",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2502",
+                "sizeCode": "2502",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2503",
+                "sizeCode": "2503",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2504",
+                "sizeCode": "2504",
                 "name": "Size",
                 "value": "xl"
             }
@@ -747,23 +747,23 @@ export const ITEMS: Item[] = [
         "tag": "shirt",
         "options": [
             {
-                "id": "2600",
+                "sizeCode": "2600",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2601",
+                "sizeCode": "2601",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2602",
+                "sizeCode": "2602",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2603",
+                "sizeCode": "2603",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2604",
+                "sizeCode": "2604",
                 "name": "Size",
                 "value": "xl"
             }
@@ -779,23 +779,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "2700",
+                "sizeCode": "2700",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2701",
+                "sizeCode": "2701",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2702",
+                "sizeCode": "2702",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2703",
+                "sizeCode": "2703",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2704",
+                "sizeCode": "2704",
                 "name": "Size",
                 "value": "xl"
             }
@@ -804,30 +804,30 @@ export const ITEMS: Item[] = [
     {
         "id": 28,
         "vendor": "Bushirt",
-        "name": "Men Navy Blue Solid Round Neck T-Shi...",
+        "name": "Men Navy Blue SolsizeCode Round Neck T-Shi...",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Teeshirt_4.jpg?v=1603275867"],
         "price": "280",
         "compare_at_price": "330",
         "tag": "T-shirt",
         "options": [
             {
-                "id": "2800",
+                "sizeCode": "2800",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2801",
+                "sizeCode": "2801",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2802",
+                "sizeCode": "2802",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2803",
+                "sizeCode": "2803",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2804",
+                "sizeCode": "2804",
                 "name": "Size",
                 "value": "xl"
             }
@@ -843,23 +843,23 @@ export const ITEMS: Item[] = [
         "tag": "T-shirt",
         "options": [
             {
-                "id": "2900",
+                "sizeCode": "2900",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "2901",
+                "sizeCode": "2901",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "2902",
+                "sizeCode": "2902",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "2903",
+                "sizeCode": "2903",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "2904",
+                "sizeCode": "2904",
                 "name": "Size",
                 "value": "xl"
             }
@@ -868,30 +868,30 @@ export const ITEMS: Item[] = [
     {
         "id": 30,
         "vendor": "H&M",
-        "name": "Men Black Solid 3-Pack T-Shirts Slim Fit",
+        "name": "Men Black SolsizeCode 3-Pack T-Shirts Slim Fit",
         "image_src": ["https://cdn.shopify.com/s/files/1/0455/2176/4502/files/Teeshirt_7.jpg?v=1603276021"],
         "price": "300",
         "compare_at_price": "360",
         "tag": "T-shirt",
         "options": [
             {
-                "id": "3000",
+                "sizeCode": "3000",
                 "name": "Size",
                 "value": "xs"
             }, {
-                "id": "3001",
+                "sizeCode": "3001",
                 "name": "Size",
                 "value": "small"
             }, {
-                "id": "3002",
+                "sizeCode": "3002",
                 "name": "Size",
                 "value": "medium"
             }, {
-                "id": "3003",
+                "sizeCode": "3003",
                 "name": "Size",
                 "value": "large"
             }, {
-                "id": "3004",
+                "sizeCode": "3004",
                 "name": "Size",
                 "value": "xl"
             }

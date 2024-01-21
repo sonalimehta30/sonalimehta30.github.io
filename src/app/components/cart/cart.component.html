@@ -1,5 +1,36 @@
-<p>cart works!</p>
+<!-- <h2>Shopping Cart</h2> -->
+<!-- <nav>
+    back to <a routerLink="/">DASHBOARD</a>
+</nav> -->
+<article class="container">
+    <div class="row">
+        <div class="col-1"> </div>
+        <div class="col-7">
+            <p *ngFor="let item of cartItemsArr">
+                <app-cart-item [item]="item"></app-cart-item>
+            </p>
+        </div>
+        <div class="col-3">
+            <div class="totals" *ngIf="cartItemsArr?.length">
+                <div class="totals-item">
+                <label>Subtotal</label>
+                <div class="totals-value" id="cart-subtotal">71.97</div>
+                </div>
+                <div class="totals-item">
+                <label>Tax (5%)</label>
+                <div class="totals-value" id="cart-tax">3.60</div>
+                </div>
+                <div class="totals-item">
+                <label>Shipping</label>
+                <div class="totals-value" id="cart-shipping">15.00</div>
+                </div>
+                <div class="totals-item totals-item-total">
+                <label>Grand Total</label>
+                <div class="totals-value" id="cart-total">90.57</div>
+                </div>
+            </div>
+        </div>
+        <div class="col-1"></div>
+    </div>
+</article>
 
-<nav>
-    <a routerLink="/">DASHBOARD</a>
-</nav>
