@@ -11,7 +11,11 @@ import { BannerComponent } from './components/banner/banner.component';
 import { ImagesAreaComponent } from './components/images-area/images-area.component';
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
-
+import { ReactiveFormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './components/not-found/not-found.component'; 
+import { GuardService } from './services/guard.service';
+import { CartItemComponent } from './component/cart-item/cart-item.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -22,13 +26,17 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
     BannerComponent,
     ImagesAreaComponent,
     UserProfileComponent,
-    DashboardComponent
+    DashboardComponent,
+    NotFoundComponent,
+    CartItemComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    ReactiveFormsModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [GuardService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

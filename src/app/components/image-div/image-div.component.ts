@@ -21,7 +21,8 @@ export class ImageDivComponent implements OnInit {
   
   sizeSelected(size: SizeOption){
     this.showATCbtn = true; 
-    this.item.selectedSize = size;
+    this.item.selectedSize = size.value;
+    this.item.sizeCode = size.sizeCode;
   }
   
   ngOnInit(): void {
