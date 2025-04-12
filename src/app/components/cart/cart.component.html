@@ -3,7 +3,7 @@
     back to <a routerLink="/">DASHBOARD</a>
 </nav> -->
 <article class="container">
-    <div class="row">
+    <div class="row" *ngIf="cartItemsArr?.length; else emptyCart">
         <div class="col-1"> </div>
         <div class="col-7">
             <p *ngFor="let item of cartItemsArr">
@@ -11,7 +11,7 @@
             </p>
         </div>
         <div class="col-3">
-            <div class="totals" *ngIf="cartItemsArr?.length">
+            <div class="totals">
                 <div class="totals-item">
                 <label>Subtotal</label>
                 <div class="totals-value" id="cart-subtotal">71.97</div>
@@ -32,5 +32,29 @@
         </div>
         <div class="col-1"></div>
     </div>
+    <ng-template #emptyCart>
+        <div class="container py-5">
+            <div class="row justify-content-center align-items-center text-center">
+              <div class="col-md-6">
+                <!-- Illustration -->
+                <img src="https://cdn-icons-png.flaticon.com/512/2038/2038854.png" alt="Empty Cart" class="img-fluid mb-4" style="max-height: 200px;">
+          
+                <!-- Title -->
+                <h2 class="fw-semibold mb-2">Your Shopping Cart is Empty</h2>
+          
+                <!-- Description -->
+                <p class="text-muted mb-4">
+                  You haven't added any items yet. Browse our categories and find something you love!
+                </p>
+          
+                <!-- Call to Action -->
+                <a href="/shop" class="btn btn-success px-4 py-2">
+                  <i class="fas fa-shopping-bag me-2"></i> Start Shopping
+                </a>
+              </div>
+            </div>
+          </div>
+          
+    </ng-template>
 </article>
 

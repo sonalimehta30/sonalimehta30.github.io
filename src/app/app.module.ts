@@ -16,6 +16,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { NotFoundComponent } from './components/not-found/not-found.component'; 
 import { GuardService } from './services/guard.service';
 import { CartItemComponent } from './component/cart-item/cart-item.component';
+import { FooterComponent } from './components/footer/footer.component';
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { CartItemComponent } from './component/cart-item/cart-item.component';
     UserProfileComponent,
     DashboardComponent,
     NotFoundComponent,
-    CartItemComponent
+    CartItemComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
