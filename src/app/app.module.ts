@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -17,7 +18,9 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GuardService } from './services/guard.service';
 import { CartItemComponent } from './component/cart-item/cart-item.component';
 import { FooterComponent } from './components/footer/footer.component';
-@NgModule({ declarations: [
+import { MaterialModule } from './material/material.module';
+@NgModule({ 
+    declarations: [
         AppComponent,
         HeaderComponent,
         ImageDivComponent,
@@ -31,7 +34,14 @@ import { FooterComponent } from './components/footer/footer.component';
         CartItemComponent,
         FooterComponent
     ],
-    bootstrap: [AppComponent], imports: [BrowserModule,
+    bootstrap: [AppComponent], 
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
         AppRoutingModule,
-        ReactiveFormsModule], providers: [GuardService, provideHttpClient(withInterceptorsFromDi())] })
+        ReactiveFormsModule,
+        MaterialModule
+    ], 
+    providers: [GuardService, provideHttpClient(withInterceptorsFromDi())] 
+})
 export class AppModule { }
