@@ -30,7 +30,7 @@ jobs:
       run: npm run test -- --watch=false --browsers=ChromeHeadless
 
     - name: Build Angular app
-      run: npm run build -- --configuration=production
+      run: npm run build -- --configuration=production --output-path=dist/e-shopping
 
     - name: Deploy to GitHub Pages
       uses: JamesIves/github-pages-deploy-action@v4
