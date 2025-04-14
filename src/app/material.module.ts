@@ -5,9 +5,9 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatButtonModule } from '@angular/material/button';
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatToolbarModule } from '@angular/material/toolbar';
-import { ThemePalette } from '@angular/material/core';
+// import { ThemePalette } from '@angular/material/core';
 
-const themeColor: ThemePalette = 'primary'; // Should reflect your theme
+// const themeColor: ThemePalette = 'primary'; // Should reflect your theme
 
 
 @NgModule({

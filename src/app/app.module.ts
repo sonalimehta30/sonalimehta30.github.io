@@ -18,7 +18,11 @@ import { NotFoundComponent } from './components/not-found/not-found.component';
 import { GuardService } from './services/guard.service';
 import { CartItemComponent } from './component/cart-item/cart-item.component';
 import { FooterComponent } from './components/footer/footer.component';
-import { MaterialModule } from './material.module';
+// import { MaterialModule } from './material.module';
+import { MatIconModule } from '@angular/material/icon';
+import { MatButtonModule } from '@angular/material/button';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatToolbarModule } from '@angular/material/toolbar';
 @NgModule({ 
     declarations: [
         AppComponent,
@@ -40,7 +44,10 @@ import { MaterialModule } from './material.module';
         BrowserAnimationsModule,
         AppRoutingModule,
         ReactiveFormsModule,
-        MaterialModule
+        MatBadgeModule,
+        MatButtonModule,
+        MatIconModule,
+        MatToolbarModule
     ], 
     providers: [GuardService, provideHttpClient(withInterceptorsFromDi())] 
 })
