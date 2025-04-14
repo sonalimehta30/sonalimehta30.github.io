@@ -14,7 +14,7 @@ describe('ImageDivComponent', () => {
     
     fixture = TestBed.createComponent(ImageDivComponent);
     component = fixture.componentInstance;
-    component.image_src = 'https://www.google.com'; // Provide a mock value
+    // component.image_src = 'https://www.google.com'; // Provide a mock value
     fixture.detectChanges();
   });
 

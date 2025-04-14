@@ -1,5 +1,5 @@
 <figure class="item" >
-    <div class="img-responsive display_image_area" [ngStyle]="{ 'background-image': 'url('+item.image_src +')'}"
+    <div class="img-responsive display_image_area" [ngStyle]="{ 'background-image': 'url('+item?.image_src +')'}"
         (mouseover)="showSizeOptions=true" (focus)="showSizeOptions=true" (mouseleave)="showSizeOptions=false; showATCbtn=false">
 
         <div class="display_options_area" *ngIf="showSizeOptions" style="margin-top: 85%;">
