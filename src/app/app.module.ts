@@ -49,6 +49,12 @@ import { MatToolbarModule } from '@angular/material/toolbar';
         MatIconModule,
         MatToolbarModule
     ], 
+    exports: [
+        MatBadgeModule,
+        MatButtonModule,
+        MatIconModule,
+        MatToolbarModule
+    ],
     providers: [GuardService, provideHttpClient(withInterceptorsFromDi())] 
 })
 export class AppModule { }
