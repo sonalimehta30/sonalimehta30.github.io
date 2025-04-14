@@ -1,0 +1,51 @@
+.header{
+    /* height: 15vh; */
+    width: 100%;
+    /* background-color: blueviolet; */
+}
+#company_logo img{
+    border-radius: 6px;
+}
+.nav_headings{
+    font-weight: bold;
+    cursor: pointer
+}
+
+.app-header {
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+  
+    .logo {
+      height: 40px;
+      margin-right: 12px;
+    }
+  
+    .brand-title {
+      font-size: 20px;
+      font-weight: bold;
+      color: white;
+    }
+  
+    .spacer {
+      flex: 1 1 auto;
+    }
+  
+    .menu-button {
+      display: none;
+  
+      @media (max-width: 768px) {
+        display: inline-flex;
+      }
+    }
+  
+    button[mat-button] {
+      font-weight: 500;
+      color: white;
+    }
+  
+    mat-icon {
+      color: white;
+    }
+  }
+  

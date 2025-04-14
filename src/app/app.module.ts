@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -12,31 +13,35 @@ import { ImagesAreaComponent } from './components/images-area/images-area.compon
 import { UserProfileComponent } from './components/user-profile/user-profile.component';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClientModule } from '@angular/common/http';
+import { provideHttpClient, withInterceptorsFromDi } from '@angular/common/http';
 import { NotFoundComponent } from './components/not-found/not-found.component'; 
 import { GuardService } from './services/guard.service';
 import { CartItemComponent } from './component/cart-item/cart-item.component';
-@NgModule({
-  declarations: [
-    AppComponent,
-    HeaderComponent,
-    ImageDivComponent,
-    CartComponent,
-    FilterDivComponent,
-    BannerComponent,
-    ImagesAreaComponent,
-    UserProfileComponent,
-    DashboardComponent,
-    NotFoundComponent,
-    CartItemComponent
-  ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule,
-    ReactiveFormsModule,
-    HttpClientModule
-  ],
-  providers: [GuardService],
-  bootstrap: [AppComponent]
+import { FooterComponent } from './components/footer/footer.component';
+import { MaterialModule } from './material.module';
+@NgModule({ 
+    declarations: [
+        AppComponent,
+        HeaderComponent,
+        ImageDivComponent,
+        CartComponent,
+        FilterDivComponent,
+        BannerComponent,
+        ImagesAreaComponent,
+        UserProfileComponent,
+        DashboardComponent,
+        NotFoundComponent,
+        CartItemComponent,
+        FooterComponent
+    ],
+    bootstrap: [AppComponent], 
+    imports: [
+        BrowserModule,
+        BrowserAnimationsModule,
+        AppRoutingModule,
+        ReactiveFormsModule,
+        MaterialModule
+    ], 
+    providers: [GuardService, provideHttpClient(withInterceptorsFromDi())] 
 })
 export class AppModule { }

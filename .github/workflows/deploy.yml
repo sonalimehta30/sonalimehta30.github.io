@@ -1,0 +1,38 @@
+name: Angular CI/CD
+
+on:
+  push:
+    branches: [ main ]
+  pull_request:
+    branches: [ main ]
+
+jobs:
+  build-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '18'
+
+    - name: Install dependencies
+      run: npm ci
+
+    - name: Lint code
+      run: npm run lint
+
+    - name: Run tests
+      run: npm run test -- --watch=false --browsers=ChromeHeadless
+
+    - name: Build Angular app
+      run: npm run build -- --configuration=production
+
+    - name: Deploy to GitHub Pages
+      uses: JamesIves/github-pages-deploy-action@v4
+      with:
+        branch: gh-pages         # The branch the app will be deployed to
+        folder: dist/e-shopping  # Replace with the actual folder name inside dist

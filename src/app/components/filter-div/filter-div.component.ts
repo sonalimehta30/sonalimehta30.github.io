@@ -1,10 +1,11 @@
-import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
-import { Item } from 'src/app/Item';
+import { Component, OnInit, Input, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { Item } from 'src/app/Item.interface';
 
 @Component({
   selector: 'app-filter-div',
   templateUrl: './filter-div.component.html',
-  styleUrls: ['./filter-div.component.css']
+  styleUrls: ['./filter-div.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class FilterDivComponent implements OnInit {
   @Input() tags: string[];
