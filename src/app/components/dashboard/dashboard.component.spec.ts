@@ -2,6 +2,8 @@ import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { DashboardComponent } from './dashboard.component';
 import { HttpClientModule } from '@angular/common/http';
+import { ImagesAreaComponent } from '../images-area/images-area.component';
+import { BannerComponent } from '../banner/banner.component';
 
 describe('DashboardComponent', () => {
   let component: DashboardComponent;
@@ -9,7 +11,7 @@ describe('DashboardComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ DashboardComponent ],
+      declarations: [ DashboardComponent, ImagesAreaComponent, BannerComponent ],
       imports: [ HttpClientModule],
     })
     .compileComponents();
