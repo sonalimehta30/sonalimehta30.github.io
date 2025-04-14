@@ -11,18 +11,18 @@
                 class="size_option_tags" 
                 (click)="sizeSelected(size)"
                 tabindex="0">
-                {{size.value}} 
+                {{size?.value}} 
             </span>
         </div>
         
     </div>
 </figure>
 <figcaption>
-    <h5> {{item.vendor}} </h5>	
-    <p class="dim_text"> {{item.name}}  </p>
+    <h5> {{item?.vendor}} </h5>	
+    <p class="dim_text"> {{item?.name}}  </p>
     <p>
-        <b> ${{item.price}}</b>
-        <s class="dim_text"> ${{item.compare_at_price}} </s>
+        <b> ${{item?.price}}</b>
+        <s class="dim_text"> ${{item?.compare_at_price}} </s>
         <span style="color: #ffb5b5"> (15% off) </span>
     </p>
 </figcaption>

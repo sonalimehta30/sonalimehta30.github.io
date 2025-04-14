@@ -5,6 +5,10 @@ import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 import { MaterialModule } from './material.module';
+import { MatToolbarModule } from '@angular/material/toolbar';
+import { MatIconModule } from '@angular/material/icon';
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatButtonModule } from '@angular/material/button';
 
 describe('AppComponent', () => {
   beforeEach(async () => {
@@ -12,7 +16,11 @@ describe('AppComponent', () => {
       imports: [
         RouterTestingModule,
         HttpClientTestingModule,
-        MaterialModule
+        MaterialModule,
+        MatIconModule,
+        MatToolbarModule,
+        MatBadgeModule,
+        MatButtonModule
       ],
       declarations: [
         AppComponent,
