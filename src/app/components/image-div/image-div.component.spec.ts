@@ -11,9 +11,10 @@ describe('ImageDivComponent', () => {
       declarations: [ ImageDivComponent ]
     })
     .compileComponents();
-
+    
     fixture = TestBed.createComponent(ImageDivComponent);
     component = fixture.componentInstance;
+    component.image_src = 'https://www.google.com'; // Provide a mock value
     fixture.detectChanges();
   });
 
