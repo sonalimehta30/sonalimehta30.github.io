@@ -7,7 +7,7 @@
                 <button mat-raised-button class="btn ATC_btn" (click)="addToCart(item)"> ADD TO CART </button> 
             </p>
             <h6>  Select Size :</h6>
-            <span *ngFor="let size of item.options" mat-raised-button
+            <span *ngFor="let size of item?.options" mat-raised-button
                 class="size_option_tags" 
                 (click)="sizeSelected(size)"
                 tabindex="0">
