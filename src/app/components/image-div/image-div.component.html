@@ -1,6 +1,6 @@
 <figure class="item" >
     <div class="img-responsive display_image_area" [ngStyle]="{ 'background-image': 'url('+item.image_src +')'}"
-        (mouseover)="showSizeOptions=true" (mouseleave)="showSizeOptions=false; showATCbtn=false">
+        (mouseover)="showSizeOptions=true" (focus)="showSizeOptions=true" (mouseleave)="showSizeOptions=false; showATCbtn=false">
 
         <div class="display_options_area" *ngIf="showSizeOptions" style="margin-top: 85%;">
             <p *ngIf="showATCbtn"> 
@@ -9,7 +9,8 @@
             <h6>  Select Size :</h6>
             <span *ngFor="let size of item.options" mat-raised-button
                 class="size_option_tags" 
-                (click)="sizeSelected(size)">
+                (click)="sizeSelected(size)"
+                tabindex="0">
                 {{size.value}} 
             </span>
         </div>

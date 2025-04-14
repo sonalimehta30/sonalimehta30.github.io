@@ -16,7 +16,7 @@ export class GuardService {
       case '/dashboard': {
         if(!this.authCheck.checkAuth()){
           console.log('Not Validated')
-          let url = this.router.createUrlTree(['/profile'])
+          const url = this.router.createUrlTree(['/profile'])
           return url;
         }
       }

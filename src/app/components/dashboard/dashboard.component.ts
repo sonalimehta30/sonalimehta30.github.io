@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
-import { Observable, from, of } from 'rxjs';
+import { Observable } from 'rxjs';
 import { map, catchError } from 'rxjs/operators';
 @Component({
   selector: 'app-dashboard',
@@ -44,23 +44,23 @@ import { map, catchError } from 'rxjs/operators';
   styleUrls: ['./dashboard.component.scss']
 })
 
-export class DashboardComponent implements OnInit {
-  url: string = "https://dummyjson.com/users";
-  currentPage: number = 0;
-  totalPages: number = 0;
-  recordsPerPage: number = 10;
+export class DashboardComponent{
+  url = "https://dummyjson.com/users";
+  currentPage = 0;
+  totalPages = 0;
+  recordsPerPage = 10;
   results: any = [];
   results$: Observable<any>;
-  isLoading: boolean = false;
+  isLoading = false;
   
   constructor(private ht:HttpClient) { }
   
-  ngOnInit(): void {
+  // ngOnInit(): void {
     // this.fetchTableData(0)
-  }
+  // }
   fetchTableData(page:number):void{
     this.isLoading = true;
-    let skip = page?page*this.recordsPerPage: page;
+    const skip = page?page*this.recordsPerPage: page;
     this.results$ = this.ht.get(`${this.url}?skip=${skip}&limit=${this.recordsPerPage}`).pipe(
       map((res:any) =>{
         this.isLoading = false;
@@ -76,19 +76,19 @@ export class DashboardComponent implements OnInit {
     })
   }
   
-  goToPage(page:string):void{
-    switch(page){
-      case 'previous': this.currentPage = this.currentPage - 1;
-      break;
-      case 'next': this.currentPage = this.currentPage + 1;
-      break;
-      case 'last': this.currentPage = this.totalPages - 1;
-      break;
-      case 'first':
-      default: 
-        this.currentPage = 0
-      break;
-    }
-    this.fetchTableData(this.currentPage)
-  }
+  // goToPage(page:string):void{
+  //   switch(page){
+  //     case 'previous': this.currentPage = this.currentPage - 1;
+  //     break;
+  //     case 'next': this.currentPage = this.currentPage + 1;
+  //     break;
+  //     case 'last': this.currentPage = this.totalPages - 1;
+  //     break;
+  //     case 'first':
+  //     default: 
+  //       this.currentPage = 0
+  //     break;
+  //   }
+  //   this.fetchTableData(this.currentPage)
+  // }
 }

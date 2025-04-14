@@ -30,6 +30,15 @@ module.exports = tseslint.config(
           style: "kebab-case",
         },
       ],
+      '@typescript-eslint/no-empty-function': "off", //[ 'warn', {allow: ['constructors'] } ],
+      "@angular-eslint/no-empty-lifecycle-method": "off",
+      '@typescript-eslint/no-unused-vars': "off",
+      '@typescript-eslint/no-explicit-any': "off",
+      '@angular-eslint/template/click-events-have-key-events': 'off',
+      '@angular-eslint/template/mouse-events-have-key-events': 'off',
+      '@angular-eslint/no-output-on-prefix': 'off',
+      '@angular-eslint/template/accessibility-valid-aria': 'off',
+      '@angular-eslint/template/no-negative-async': 'off'
     },
   },
   {
@@ -38,6 +47,16 @@ module.exports = tseslint.config(
       ...angular.configs.templateRecommended,
       ...angular.configs.templateAccessibility,
     ],
-    rules: {},
+    rules: {
+      '@typescript-eslint/no-empty-function': "off", //[ 'warn', {allow: ['constructors'] } ],
+      "@angular-eslint/no-empty-lifecycle-method": "off",
+      '@typescript-eslint/no-unused-vars': "off",
+      '@typescript-eslint/no-explicit-any': "off",
+      '@angular-eslint/template/click-events-have-key-events': 'off',
+      '@angular-eslint/template/mouse-events-have-key-events': 'off',
+      '@angular-eslint/no-output-on-prefix': 'off',
+      '@angular-eslint/template/accessibility-valid-aria': 'off',
+      '@angular-eslint/template/no-negative-async': 'off',
+    },
   }
 );

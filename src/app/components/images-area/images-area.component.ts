@@ -47,7 +47,7 @@ export class ImagesAreaComponent implements OnInit {
     //   'id' : cartItem.selectedSize?.id,
     //   'qty' : 1
     // }
-    let temp = cartItem;
+    const temp = cartItem;
     temp.qty = 1;
     temp.sizeCode = cartItem.sizeCode;
     this.cart_items.push(temp)
@@ -58,7 +58,7 @@ export class ImagesAreaComponent implements OnInit {
   
   ngOnInit(){
     this.items = this.items.map((x)=>{
-      let compare_at_price = parseInt(x['compare_at_price'])
+      const compare_at_price = parseInt(x['compare_at_price'])
       x.discount = Math.round((compare_at_price - parseInt(x['price']))/compare_at_price)*100;
       this.tags_arr.push(x.tag)
       return x;
