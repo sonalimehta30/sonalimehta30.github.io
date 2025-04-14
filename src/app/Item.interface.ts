@@ -5,7 +5,7 @@ export interface SizeOption{
 }
 
 export interface Item{
-    "id": Number;
+    "id": number;
     "vendor": string;
     "name": string;
     "image_src": string[];
@@ -15,6 +15,6 @@ export interface Item{
     "options": SizeOption[];
     "discount"?: number;
     "selectedSize"?: string;
-    "qty"?: Number;
+    "qty"?: number;
     "sizeCode"?: string;
 }

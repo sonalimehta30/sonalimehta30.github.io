@@ -1,6 +1,8 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
 import { ImagesAreaComponent } from './images-area.component';
+import { FilterDivComponent } from '../filter-div/filter-div.component';
+import { ImageDivComponent } from '../image-div/image-div.component';
 
 describe('ImagesAreaComponent', () => {
   let component: ImagesAreaComponent;
@@ -8,7 +10,7 @@ describe('ImagesAreaComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ ImagesAreaComponent ]
+      declarations: [ ImagesAreaComponent, FilterDivComponent, ImageDivComponent ]
     })
     .compileComponents();
 

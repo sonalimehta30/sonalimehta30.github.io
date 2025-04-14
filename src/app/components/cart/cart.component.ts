@@ -9,10 +9,10 @@ import { ItemsService } from 'src/app/services/items.service';
 export class CartComponent implements OnInit {
 
   constructor(private cartItems:ItemsService) { }
-  cartItemsArr:any = [];
+  cartItemsArr: any = '';
 
   ngOnInit(): void {
-    this.cartItemsArr = this.cartItems.getCartItems()
+    this.cartItemsArr = this.cartItems?.getCartItems()
     this.cartItemsArr = JSON.parse(this.cartItemsArr)
   }
 

@@ -22,17 +22,17 @@ export class ImagesAreaComponent implements OnInit {
   filterResults(tagName:string){
     this.items = ITEMS;
     if(tagName!= 'all' && tagName!= 'clear'){
-      this.items = this.items.filter((v:Item)=> v.tag.toLowerCase() == tagName.toLowerCase())
+      this.items = this.items.filter((v:Item)=> v?.tag.toLowerCase() == tagName.toLowerCase())
     }
   }
   
   sortResults(order:string){
     this.items = ITEMS;
     if (order=='desc') {
-      this.items.sort((v,d)=> (parseInt(v.price) >= parseInt(d.price))? -1 : 1)
+      this.items.sort((v,d)=> (parseInt(v?.price) >= parseInt(d?.price))? -1 : 1)
       return;
     }else{
-      this.items.sort((v,d)=> (parseInt(v.price) < parseInt(d.price))? -1 : 1)
+      this.items.sort((v,d)=> (parseInt(v?.price) < parseInt(d?.price))? -1 : 1)
       return;
     }
   }
@@ -47,9 +47,9 @@ export class ImagesAreaComponent implements OnInit {
     //   'id' : cartItem.selectedSize?.id,
     //   'qty' : 1
     // }
-    let temp = cartItem;
+    const temp = cartItem;
     temp.qty = 1;
-    temp.sizeCode = cartItem.sizeCode;
+    temp.sizeCode = cartItem?.sizeCode;
     this.cart_items.push(temp)
     // save this in session later
     localStorage.setItem('cart_items', JSON.stringify(this.cart_items))
@@ -58,9 +58,9 @@ export class ImagesAreaComponent implements OnInit {
   
   ngOnInit(){
     this.items = this.items.map((x)=>{
-      let compare_at_price = parseInt(x['compare_at_price'])
+      const compare_at_price = parseInt(x['compare_at_price'])
       x.discount = Math.round((compare_at_price - parseInt(x['price']))/compare_at_price)*100;
-      this.tags_arr.push(x.tag)
+      this.tags_arr.push(x?.tag)
       return x;
     })
     this.tags_arr = [...new Set(this.tags_arr)]

@@ -9,7 +9,7 @@ import { Item, SizeOption } from 'src/app/Item.interface';
 })
 export class ImageDivComponent implements OnInit {
   @Input() item: Item; 
-  @Output() onAddToCart: EventEmitter<Item> = new EventEmitter();
+  @Output() onAddToCart = new EventEmitter<Item>();
   
   showSizeOptions = false;
   showATCbtn = false;
