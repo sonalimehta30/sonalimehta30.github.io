@@ -1,39 +1,22 @@
-<header>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-      <div class="container">
-        <!-- Logo -->
-        <a class="navbar-brand d-flex align-items-center" href="/">
-          <img id='company_logo' src="../../assets/shopmate-logo.png" alt="ShopMate Logo" width="35" height="35" class="me-2">
-          <strong>ShopMate</strong>
-        </a>
-  
-        <!-- Mobile Toggle -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-  
-        <!-- Nav Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav ms-auto">
-            <li class="nav-item">
-              <a class="nav-link active" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Shop</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Deals</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/cart">
-                <div matBadge="4" matBadgeOverlap="false"  class="demo-section">Cart</div>
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" routerLink="/profile">Account</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-  </header>
+<mat-toolbar color="primary" class="app-header">
+  <button mat-icon-button class="menu-button">
+    <mat-icon>menu</mat-icon>
+  </button>
+
+  <img id='company_logo' routerLink="/" src="../../assets/shopmate-logo.png" alt="ShopMate Logo" class="logo" />
+
+  <span mat-button class="brand-title" routerLink="/">ShopMate</span>
+
+  <span class="spacer"></span>
+
+  <button mat-button routerLink="/">Home</button>
+  <button mat-button>Shop</button>
+  <button mat-button>Deals</button>
+  <button mat-button routerLink="/cart">
+    <div matBadge="" matBadgeOverlap="false"  class="demo-section">Cart</div>
+  </button>
+
+  <button mat-button routerLink="/profile" aria-label="User account">
+    <!-- <mat-icon>account_circle</mat-icon> -->Account
+  </button>
+</mat-toolbar>

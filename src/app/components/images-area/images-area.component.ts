@@ -1,11 +1,12 @@
-import { Component, Input, OnInit, Output } from '@angular/core';
+import { ChangeDetectionStrategy, Component, Input, OnInit, Output } from '@angular/core';
 import { ITEMS } from "../../mock-data";
-import { Item } from 'src/app/Item';
+import { Item } from 'src/app/Item.interface';
 
 @Component({
   selector: 'app-images-area',
   templateUrl: './images-area.component.html',
-  styleUrls: ['./images-area.component.css']
+  styleUrls: ['./images-area.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImagesAreaComponent implements OnInit {
   @Output() item: Item;

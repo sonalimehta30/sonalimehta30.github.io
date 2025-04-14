@@ -8,7 +8,7 @@
         </span>
     </span>
     
-    <span id="sorting_span" class="btn tags" (click)="sort_order=!sort_order" style="float: right;"> 
+    <span id="sorting_span" mat-raised-button (click)="sort_order=!sort_order" style="float: right;"> 
         <span class="dim_text">
             Sort By:  
         </span>
@@ -22,8 +22,8 @@
         </span>
     </span>
 
-    <span *ngIf="filter_applied" class="btn tags" (click)="onfilterSelection('clear')" style="float: right;">
+    <button *ngIf="filter_applied" mat-raised-button (click)="onfilterSelection('clear')" style="float: right;">
         Clear Filter
-    </span>
+    </button>
 
 </div>

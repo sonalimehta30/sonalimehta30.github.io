@@ -8,14 +8,14 @@ import { FormGroup, FormControl, Validators, FormBuilder } from '@angular/forms'
       Username: <input type="text" class="form-control" formControlName="username">
       Password: <input type="password" class="form-control" formControlName="password">
       <br>
-      <button type="submit" class="btn btn-success form-control" (click)="formSubmit()" [disabled]="!loginForm.valid"> Submit</button>
+      <button type="submit" mat-raised-button class="form-control" (click)="formSubmit()" [disabled]="!loginForm.valid"> Submit</button>
     </div>
   `,
   // templateUrl: './user-profile.component.html',
-  // styleUrls: ['./user-profile.component.css']
-  styleUrls: []
+  styleUrls: ['./user-profile.component.scss']
+  // styleUrls: []
 })
-export class UserProfileComponent{
+export class UserProfileComponent implements OnInit{
 
   loginForm:FormGroup;
   
@@ -37,6 +37,10 @@ export class UserProfileComponent{
   // })
   
   formSubmit(){
+    
+  }
+
+  ngOnInit(): void {
     
   }
 

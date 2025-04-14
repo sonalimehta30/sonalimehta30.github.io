@@ -1,10 +1,11 @@
-import { Component, Input, OnInit, Output, EventEmitter } from '@angular/core';
-import { Item, SizeOption } from 'src/app/Item';
+import { Component, Input, OnInit, Output, EventEmitter, ChangeDetectionStrategy } from '@angular/core';
+import { Item, SizeOption } from 'src/app/Item.interface';
 
 @Component({
   selector: 'app-image-div',
   templateUrl: './image-div.component.html',
-  styleUrls: ['./image-div.component.css']
+  styleUrls: ['./image-div.component.scss'],
+  changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class ImageDivComponent implements OnInit {
   @Input() item: Item; 
